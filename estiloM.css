@@ -17,12 +17,14 @@
 body{
   background: var(--theme-color);
   font-family: 'Bodoni Moda', serif;
+  margin: 0;
+  padding: 0;
   
 }
 
 .topheader{
   box-shadow: 0 4px 5px var(--theme-color-block) ; 
-  /* position: fixed; */
+  position: fixed;
   background-color: var(--menu--mobile-background-color);
   left: 0;
   top: 0;
@@ -30,6 +32,7 @@ body{
   height: 40px;
   max-width: 1000px;
   justify-content: space-around;
+  z-index: 3;
 
 }
 
@@ -45,6 +48,7 @@ body{
   left: 0;
   top: 0;
   height: 40px;
+  
 }
 
 /* LOGO */
@@ -266,25 +270,29 @@ a:hover{
 }
 
 .tituloFooterh4, .subFooterh4{
-  font-size: 30px;
+  font-size: 1.7em;
 }
 
 .subFooterh5{
-  font-size: 25px;
+  font-size: 1.3em;
 }
 
 /* FORM-LOGIN */
 
 .form-login{
-  background-color:#ddc0c3;
-  margin:auto ;
-  margin-top: 20%;
+  background-color:#dac1c4;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5.2em;
+  margin-bottom: 5.2em;
   width: 900%;
   max-width: 350px;
   padding: 4.5rem 3em;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 /10%);
   text-align: center;
+  
+  /* transform: translate(-40%, -50%); */
   
 }
 
@@ -340,9 +348,10 @@ a:hover{
 
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label{
-  transform: translateY(-12px) scale(.7);
+  transform: translateY(-0.5em) scale(.7);
   transform-origin: left top;
-  color: var(--theme-color-font-secundaria);
+  color: #000000;
+  
 }
 
 .form-label{
@@ -351,15 +360,18 @@ a:hover{
   position: absolute;
   top:0;
   left: 5px;
+  font-family: 'Bona Nova', serif;
+  font-weight: 500;
+  font-size: 1.1em;
   transform: translateY(10px);
   transition: transform .5s, color .3s ;
 }
 
 .form-submit{
-  background:#cf9fa5;
-  color: var(--color);
+  background:#ccadb1;
+  color: var(--theme-color-font-principal);
   font-family:'Bodoni Moda', serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
   padding: .8em 0 ;
@@ -385,8 +397,148 @@ a:hover{
   transform: scale(1);
 
 }
+
+
+textarea{
+  resize: none;
+  justify-content: center;
+  width: 80%;
+  
+
+}
+
+.form-TextLavel{
+  position: absolute;
+  bottom: 3em;;
+  left: 5px;
+  font-family: 'Bona Nova', serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: var(--color);
+
+}
+
+
+/* SLIDER/NOSOTROS */
+
+.titulo-nosotros{
+  font-family: 'Bona Nova', serif;
+  color: var(--theme-color-font-secundaria);
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 550;
+  margin: 1.5em;
+  margin-top: 1.8em;
+ 
+}
+
+.sub-N{
+  width: 100%;
+  background-color: #f8eeef;
+
+}
+
+.sub-N .sub-nosotros{
+  font-family: 'Bona Nova', serif;
+  color: var(--theme-color-font-secundaria);
+  text-align: center;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 1em;
+
+}
+
+.description-nosotros{
+  
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+  justify-items: center;
+  background-color: none;
+}
+.surgimiento {
+  margin: 2.5em;
+  text-align:justify;
+  color: #804850;
+  font-size: 2em;
+  font-family: 'Bona Nova', serif;
+  font-weight: 500;
+}
+
+.slider{
+  width: 100%;
+  height: 26em ;
+  background: url(imagenesM/img1.jpeg);
+  margin: 50px auto;
+  animation: slide 20s infinite;
+  opacity: 0.8;
+  border-radius: 5px;
+  max-width: 57em;
+}
+
+@keyframes slide {
+  20% {
+    background: url(imagenesM/img2.jpeg);
+  }
+
+  40% {
+    background: url(imagenesM/img3.jpeg);
+  }
+
+  60% {
+    background: url(imagenesM/img4.jpeg);
+  }
+
+  80% {
+    background: url(imagenesM/img5.jpeg);
+  }
+
+  100% {
+    background: url(imagenesM/img1.jpeg);
+  }
+
+  
+}
+
+
+
+.section-logoN{
+  display: flex;
+
+  align-items: center;
+  position: relative;
+}
+
+.section-logoN .logoNosotros{
+  height: 25em;
+  width: 100%;
+
+}
+
+.perfil-ceci{
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  right: 50%;
+  
+
+}
+
+.img-ceci{
+  align-items: center;
+  height: 20em;
+  width: 20em;
+  opacity: 0.9;
+  border-radius: 50%;
+  object-fit:cover;
+  object-position: 50% 60%;
+}
+
+
+
 /* RESPONSIVE-MOBILE */
-@media(max-width: 600px){
+@media screen and (max-width: 430px){
   /* MENU */
   .menu{
     flex-direction: column;
@@ -530,10 +682,95 @@ a:hover{
   }
 
   /* FORM-LOGIN */
+
+
+  .form-login{
+    margin: 0;
+    margin-top: 5.2em;
+    margin-bottom: 5.2em;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 1em;
+    /* transform: translate(-40%, -50%); */
+  }
+
+  
+
   .form-title{
     font-size: 1.8rem;
 
   }
+
+  /* NOSOTROS */
+  .titulo-nosotros{
+    font-size: 1.7rem;
+    margin-top: 3em;
+    margin-bottom: 0.8em;
+  }
+
+  .sub-N .sub-nosotros{
+    font-size: 0.8em;
+  }
+  
+  .description-nosotros{
+    margin-top: 0.5em;
+    display: grid;
+    gap: 0.5em;
+  }
+  .surgimiento {
+    font-size: 1em;
+    font-weight: 550;
+  }
+  
+  .slider{
+    width: 100%;
+    height: 23em;
+    margin: 1em auto;
+    border-radius:0;
+    max-width: 30em;
+    max-height: 35.5em;
+  }
+  
+  @keyframes slide {
+    20% {
+      background: url(imagenesM/img2.jpeg);
+    }
+    40% {
+      background: url(imagenesM/img3.jpeg);
+    }
+    60% {
+      background: url(imagenesM/img4.jpeg);
+    }
+    80% {
+      background: url(imagenesM/img6.jpeg);
+    }
+    100% {
+      background: url(imagenesM/img1.jpeg);
+    }
+    
+  }
+  
+  .section-logoN{
+    align-items: center;
+  }
+
+  .section-logoN .logoNosotros{
+    height: 8em;
+    width: 100%;
+  }
+  
+  .perfil-ceci{
+    width: 100%;
+    height: 8em;
+  }
+  
+  .perfil-ceci .img-ceci{
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+  }
+  
   
 
 }
