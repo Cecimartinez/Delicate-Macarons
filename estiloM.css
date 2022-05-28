@@ -218,12 +218,13 @@ a:hover{
  
 /* finalDelInicio */
 
-.fotoLogo{
+#fotoLogo{
   position: absolute;
   display: flex;
   justify-content: center;
-  margin: 20px;
   width: 100%;
+
+
 }
 .imgFinInicio{
   width: 100%;
@@ -280,7 +281,7 @@ a:hover{
 /* FORM-LOGIN */
 
 .form-login{
-  background-color:#dac1c4;
+  background-color:#e1d2d3;
   justify-content: center;
   margin: auto;
   margin-top: 5.2em;
@@ -301,12 +302,14 @@ a:hover{
   margin-bottom: .5em;
   text-transform: uppercase;
   font-family:'Bodoni Moda', serif;
+  color: #AD6B74;
 
 }
 
 .form-paragraph{
   font-weight: 300;
   font-family:'Bodoni Moda', serif;
+  color: #AD6B74;
 }
 
 .form-link{
@@ -332,7 +335,7 @@ a:hover{
 .form-input{
   width: 100%;
   background: none;
-  color: #000000;
+  color:#804850;
   font-size: 1rem;
   padding: .6em .3em;
   border: none;
@@ -350,7 +353,7 @@ a:hover{
 .form-input:not(:placeholder-shown) + .form-label{
   transform: translateY(-0.5em) scale(.7);
   transform-origin: left top;
-  color: #000000;
+  color: var(--theme-color-font-terciaria);
   
 }
 
@@ -477,6 +480,25 @@ textarea{
   max-width: 57em;
 }
 
+.contenedor-img-cont{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height:10em;
+  align-items: center;
+  margin: 50px auto;
+  justify-content: center;
+
+}
+
+
+.img-cont{
+  display: flex;
+  height: 25.5em;
+  position: absolute;
+
+}
+
 @keyframes slide {
   20% {
     background: url(imagenesM/img2.jpeg);
@@ -517,11 +539,12 @@ textarea{
 }
 
 .perfil-ceci{
-  align-items: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin: auto;
-  right: 50%;
-  
+  height:100% ;
+
 
 }
 
@@ -531,10 +554,81 @@ textarea{
   width: 20em;
   opacity: 0.9;
   border-radius: 50%;
-  object-fit:cover;
-  object-position: 50% 60%;
+  /* object-fit:cover;
+  object-position: 50% 60%; */
 }
 
+/* SECCIÓN PRODUCTOS */
+
+.titulo-variedad{
+  font-family: 'Bona Nova', serif;
+  color: var(--theme-color-font-secundaria);
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 580;
+  margin: 2em 1em 1em 1em;
+
+}
+
+.recordatorio{
+  background-color: #eed4d7;
+  width: 100%;
+  opacity: 0.9 ;
+  height: 1.3em;
+  text-align: center;
+}
+.recordatorio p{
+  text-transform: uppercase;
+  color: var(--theme-color-font-principal);
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Bona Nova', serif;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.container-variedad{
+  margin: auto;
+  /* display: flex; */
+  width: 100%;
+}
+
+
+
+.der-img, .izq-img{
+  height: 20em;
+  width: 100%;
+  background-color:#fff3f5;
+  padding: 0;
+  margin: 0.5em 0 0.5em 0;
+  text-align: justify;
+  display:flex;
+  align-items: center;
+  position: relative;
+
+  
+}
+
+.imgI, .imgD{
+  width: 27em;
+  height: 27em;
+  display:block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.description-izq, .description-der{
+ font-size: 1.1em;
+ font-weight: 600;
+ margin: 2em 8em 2em 8em;
+ font-family: 'Bona Nova', serif;
+ text-transform: uppercase;
+ color: var(--theme-color-font-secundaria);
+ display: flexbox;
+
+}
 
 
 /* RESPONSIVE-MOBILE */
@@ -547,7 +641,7 @@ textarea{
     top: 0;
     width: 100%;
     height: 100%;
-    align-items: center;
+    align-items: center;  
     background-color: var(--menu--mobile-background-color);
     overflow-y: auto;
     opacity: 0;
@@ -657,6 +751,14 @@ textarea{
     margin-top: 10rem ;
   }
   
+  #fotoLogo{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+
+
   .logoFinal{
     position: absolute;
     top: 47em;
@@ -681,25 +783,40 @@ textarea{
     font-size: 10px;
   }
 
-  /* FORM-LOGIN */
+  /* FORM-contacto */
 
 
   .form-login{
     margin: 0;
     margin-top: 5.2em;
     margin-bottom: 5.2em;
-    max-width: 310px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em 1em;
     /* transform: translate(-40%, -50%); */
   }
 
-  
-
   .form-title{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 
+  }
+  .contenedor-img-cont{
+    
+    width: 100%;
+    height:5em;
+    align-items: center;
+    margin: 25px auto;
+    justify-content: center;
+  
+  }
+  
+  
+  .img-cont{
+    display: flex;
+    height: 12.5em;
+    position: absolute;
+  
   }
 
   /* NOSOTROS */
@@ -771,7 +888,54 @@ textarea{
     border-radius: 50%;
   }
   
+  /* SECCIÓN PRODUCTOS */
+
+.titulo-variedad{
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 4em 1em 1em 1em;
+
+}
+
+.recordatorio{
+  height: 1em;
+}
+.recordatorio p{
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.container-variedad{
+  margin: 0;
+  width: 100%;
+}
+
+.der-img, .izq-img{
+  height: 20em;
   
+  margin: 0.5em 0 0.5em 0;
+  
+  display:flex;
+  align-items: center;
+  position: relative;
+
+  
+}
+
+.imgI, .imgD{
+  width: 13em;
+  height: 13em;
+  display:flex;
+  position: relative;
+}
+
+.description-izq, .description-der{
+ font-size: 0.7em;
+ font-weight: 300;
+ margin: 1em 2em 1em 2em;
+ display: flex;
+
+}
 
 }
 
