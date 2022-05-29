@@ -150,7 +150,7 @@ a:hover{
 }
 
 /* RESPONSIVE-MOBILE */
-@media screen and (max-width: 430px){
+@media screen and (max-width:760px){
   /* MENU */
   .menu{
    flex-direction: column;

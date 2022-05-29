@@ -74,36 +74,37 @@ body{
 .slider{
   width: 100%;
   height: 26em ;
-  background: url(imagenesM/img1.jpeg);
+  background:url(../imagenesM/img1.jpeg);
   margin: 50px auto;
   animation: slide 20s infinite;
   opacity: 0.8;
   border-radius: 5px;
   max-width: 57em;
 }
+
 @keyframes slide {
   20% {
-    background: url(imagenesM/img2.jpeg);
+    background: url(../imagenesM/img2.jpeg);
   }
 
   40% {
-    background: url(imagenesM/img3.jpeg);
+    background: url(../imagenesM/img3.jpeg);
   }
 
   60% {
-    background: url(imagenesM/img4.jpeg);
+    background: url(../imagenesM/img3.jpeg);
   }
 
   80% {
-    background: url(imagenesM/img5.jpeg);
+    background: url(../imagenesM/img4.jpeg);
   }
 
   100% {
-    background: url(imagenesM/img1.jpeg);
+    background: url(../imagenesM/img5.jpeg);
   }
   
 }
-@media screen and (max-width: 430px){
+@media screen and (max-width: 760px){
  /* NOSOTROS */
  .titulo-nosotros{
   font-size: 1.7rem;
@@ -124,7 +125,6 @@ body{
   font-size: 1em;
   font-weight: 550;
 }
-
 .slider{
   width: 100%;
   height: 23em;
@@ -132,26 +132,28 @@ body{
   border-radius:0;
   max-width: 30em;
   max-height: 35.5em;
+  background:url(../imagenesM/img1.jpeg);
 }
 
 @keyframes slide {
   20% {
-    background: url(imagenesM/img2.jpeg);
+    background: url(../imagenesM/img2.jpeg);
   }
   40% {
-    background: url(imagenesM/img3.jpeg);
+    background: url(../imagenesM/img3.jpeg);
   }
   60% {
-    background: url(imagenesM/img4.jpeg);
+    background: url(../imagenesM/img4.jpeg);
   }
   80% {
-    background: url(imagenesM/img6.jpeg);
+    background: url(../imagenesM/img6.jpeg);
   }
   100% {
-    background: url(imagenesM/img1.jpeg);
+    background: url(../imagenesM/img1.jpeg);
   }
   
 }
+
 
 .section-logoN{
   display: flex;

@@ -149,7 +149,7 @@ body{
 }
 
 /* RESPONSIVE-MOBILE */
-@media screen and (max-width: 430px){
+@media screen and (max-width: 760px){
   /* TITULO PRINCIPAL */
   .hero{
     position: relative;
