@@ -1,0 +1,165 @@
+:root{
+  --theme-color:#ffff;
+  --theme-color-div:#F1D5D9;
+  --theme-colo-div-secundario:#DDC0C4; 
+  --theme-color-block:#E9CDD1;
+  --theme-color-font-footer:#646262;
+  --theme-color-font-principal:#804850;
+  --theme-color-font-secundaria:#AD6B74;
+  --theme-color-font-terciaria:#C0838A; 
+  --theme-color-form:#7A4E55;
+  --theme-color-icon:#C0838A;
+  --theme-color-btn:#E2C9CC;
+  --menu--mobile-background-color:#E9D3D3;
+}
+
+body{
+  background: var(--theme-color);
+  font-family: 'Bodoni Moda', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* inicio */
+.hero{
+  position: relative;
+  overflow: hidden;
+  margin: 90px  0 0 0; 
+  display:flex;
+  justify-content: center;
+} 
+
+/* SECCIÓN PRODUCTOS */
+
+.titulo-variedad{
+  font-family: 'Bona Nova', serif;
+  color: var(--theme-color-font-secundaria);
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 580;
+  margin: 2em 1em 1em 1em;
+
+}
+
+.recordatorio{
+  background-color: #eed4d7;
+  width: 100%;
+  opacity: 0.9 ;
+  height: 1.3em;
+  text-align: center;
+}
+.recordatorio p{
+  text-transform: uppercase;
+  color: var(--theme-color-font-principal);
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Bona Nova', serif;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.container-variedad{
+  margin: auto;
+  /* display: flex; */
+  width: 100%;
+}
+
+
+
+.der-img, .izq-img{
+  height: 20em;
+  width: 100%;
+  background-color:#fff3f5;
+  padding: 0;
+  margin: 0.5em 0 0.5em 0;
+  text-align: justify;
+  display:flex;
+  align-items: center;
+  position: relative;
+
+  
+}
+
+.imgI, .imgD{
+  width: 27em;
+  height: 27em;
+  display:block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.description-izq, .description-der{
+ font-size: 1.1em;
+ font-weight: 600;
+ margin: 2em 6.5em 2em 6.5em;
+ font-family: 'Bona Nova', serif;
+ text-transform: uppercase;
+ color: var(--theme-color-font-secundaria);
+ display: flex;
+
+}
+
+@media screen and (max-width: 430px){
+/* SECCIÓN PRODUCTOS */
+
+.titulo-variedad{
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 4em 1em 1em 1em;
+
+}
+
+.recordatorio{
+  height: 1em;
+}
+.recordatorio p{
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.container-variedad{
+  margin: 0;
+  width: 100%;
+}
+
+.der-img, .izq-img{
+  height: 12em;
+  margin: 0.5em 0 0.5em 0;
+  
+  display:flex;
+  align-items: center;
+  position: relative;
+
+  
+}
+
+.imgI, .imgD{
+  width: 13em;
+  height: 13em;
+  display:flex;
+  position: relative;
+}
+
+.description-izq, .description-der{
+ font-size: 0.6em;
+ font-weight: 400;
+ margin: 0.5em 1em 0.5em 1em;
+ display: flex;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

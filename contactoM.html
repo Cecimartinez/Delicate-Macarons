@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Délicate Macarons - Contacto </title>
-    <link rel="stylesheet" type="text/css" href="estiloM.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="contacto-style.css">
+    <link rel="ICON" href="imagenesM/iconM.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
@@ -22,7 +24,7 @@
         <nav class="topnav">
           
           <a href="" class="logo">
-            <img class="logoDM " src="imagenesM/iconM.svg">
+            <img class="logoDM " src="imagenesM/iconM.png">
             <div>Délicate Macarons </div>
           </a>
   
@@ -49,21 +51,20 @@
           </ul>
       </nav>
     </header>
-    <form class="form-login">
+    <form class="form-login" action="https://formspree.io/f/mnqwzdjb"
+    method="POST" id="form">
       <h2 class="form-title">Contáctanos</h2>
-      <p class="form-paragraph">wsdksjdasjsjaksj 
-        <!-- <a href="#" class="form-link"> Regístrate</a> -->
-      </p>
+      <p class="form-paragraph">Déjanos tu mensaje</p>
 
       <div class="form-container">
         <div class="form-group">
-          <input type="text" id="name"  class="form-input" placeholder=" " required>
+          <input type="text" id="name"  class="form-input" placeholder=" ">
           <label for="name" class="form-label" >Nombre: </label>
           <span class="form-line"></span>
         </div>
 
         <div class="form-group">
-          <input type="email" id="user"  class="form-input" placeholder=" " required>
+          <input type="text" id="email"  class="form-input" placeholder=" " >
           <label for="user" class="form-label" >e-mail: </label>
           <span class="form-line"></span>
         </div>
@@ -71,10 +72,10 @@
         <div class="form-group">
           <textarea  id="mensaje"  class="form-input" > </textarea>
           <label for="mensaje" class="form-TextLavel" >Mensaje: </label>
-          <!-- <span class="form-line"></span> -->
         </div>
 
         <input type="submit" class="form-submit" value="Iniciar">
+        <p class="warnings" id="warnings"></p>
       </div>
     </form>
 

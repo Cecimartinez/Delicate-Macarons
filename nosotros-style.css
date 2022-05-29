@@ -1,0 +1,189 @@
+:root{
+  --theme-color:#ffff;
+  --theme-color-div:#F1D5D9;
+  --theme-colo-div-secundario:#DDC0C4; 
+  --theme-color-block:#E9CDD1;
+  --theme-color-font-footer:#646262;
+  --theme-color-font-principal:#804850;
+  --theme-color-font-secundaria:#AD6B74;
+  --theme-color-font-terciaria:#C0838A; 
+  --theme-color-form:#7A4E55;
+  --theme-color-icon:#C0838A;
+  --theme-color-btn:#E2C9CC;
+  --menu--mobile-background-color:#E9D3D3;
+}
+body{
+  background: var(--theme-color);
+  font-family: 'Bodoni Moda', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NOSOTROS */
+.titulo-nosotros{
+  font-family: 'Bona Nova', serif;
+  color: var(--theme-color-font-secundaria);
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 550;
+  margin: 1.5em;
+  margin-top: 1.8em;
+ 
+}
+
+.sub-N{
+  width: 100%;
+  background-color: #f8eeef;
+
+}
+
+.sub-N .sub-nosotros{
+  font-family: 'Bona Nova', serif;
+  color: var(--theme-color-font-secundaria);
+  text-align: center;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.section-logoN{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.description-nosotros{
+  
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+  justify-items: center;
+  background-color: none;
+}
+.surgimiento {
+  margin: 2.5em;
+  text-align:justify;
+  color: #804850;
+  font-size: 2em;
+  font-family: 'Bona Nova', serif;
+  font-weight: 500;
+}
+
+.slider{
+  width: 100%;
+  height: 26em ;
+  background: url(imagenesM/img1.jpeg);
+  margin: 50px auto;
+  animation: slide 20s infinite;
+  opacity: 0.8;
+  border-radius: 5px;
+  max-width: 57em;
+}
+@keyframes slide {
+  20% {
+    background: url(imagenesM/img2.jpeg);
+  }
+
+  40% {
+    background: url(imagenesM/img3.jpeg);
+  }
+
+  60% {
+    background: url(imagenesM/img4.jpeg);
+  }
+
+  80% {
+    background: url(imagenesM/img5.jpeg);
+  }
+
+  100% {
+    background: url(imagenesM/img1.jpeg);
+  }
+  
+}
+@media screen and (max-width: 430px){
+ /* NOSOTROS */
+ .titulo-nosotros{
+  font-size: 1.7rem;
+  margin-top: 3em;
+  margin-bottom: 0.8em;
+}
+
+.sub-N .sub-nosotros{
+  font-size: 0.8em;
+}
+
+.description-nosotros{
+  margin-top: 0.5em;
+  display: grid;
+  gap: 0.5em;
+}
+.surgimiento {
+  font-size: 1em;
+  font-weight: 550;
+}
+
+.slider{
+  width: 100%;
+  height: 23em;
+  margin: 1em auto;
+  border-radius:0;
+  max-width: 30em;
+  max-height: 35.5em;
+}
+
+@keyframes slide {
+  20% {
+    background: url(imagenesM/img2.jpeg);
+  }
+  40% {
+    background: url(imagenesM/img3.jpeg);
+  }
+  60% {
+    background: url(imagenesM/img4.jpeg);
+  }
+  80% {
+    background: url(imagenesM/img6.jpeg);
+  }
+  100% {
+    background: url(imagenesM/img1.jpeg);
+  }
+  
+}
+
+.section-logoN{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.section-logoN .logoNosotros{
+  height: 8em;
+  width: 100%;
+}
+
+.perfil-ceci{
+  width: 100%;
+  height: 8em;
+}
+
+.perfil-ceci .img-ceci{
+  height: auto;
+  width: auto;
+  border-radius: 50%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+

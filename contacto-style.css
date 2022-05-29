@@ -1,0 +1,216 @@
+:root{
+  --theme-color:#ffff;
+  --theme-color-div:#F1D5D9;
+  --theme-colo-div-secundario:#DDC0C4; 
+  --theme-color-block:#E9CDD1;
+  --theme-color-font-footer:#646262;
+  --theme-color-font-principal:#804850;
+  --theme-color-font-secundaria:#AD6B74;
+  --theme-color-font-terciaria:#C0838A; 
+  --theme-color-form:#7A4E55;
+  --theme-color-icon:#C0838A;
+  --theme-color-btn:#E2C9CC;
+  --menu--mobile-background-color:#E9D3D3;
+}
+body{
+  background: var(--theme-color);
+  font-family: 'Bodoni Moda', serif;
+  margin: 0;
+  padding: 0;
+}
+/* contacto */
+.form-login{
+  background-color:#e1d2d3;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5.2em;
+  margin-bottom: 5.2em;
+  width: 900%;
+  max-width: 350px;
+  padding: 4.5rem 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0 0 0 /10%);
+  text-align: center;
+  /* transform: translate(-40%, -50%); */
+}
+
+.form-title{
+  font-size: 2rem;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  font-family:'Bodoni Moda', serif;
+  color: #AD6B74;
+}
+
+.form-paragraph{
+  font-weight: 300;
+  font-family:'Bodoni Moda', serif;
+  color: #AD6B74;
+}
+
+.form-link{
+  font-weight: 400;
+  color: #804850;
+  font-family:'Bodoni Moda', serif;
+  text-transform: uppercase;
+}
+
+.form-container{
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+
+}
+
+.form-group{
+  position: relative;
+  --color: var(--theme-color-font-principal);
+}
+
+.form-input{
+  width: 100%;
+  background: none;
+  color:#804850;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+  font-family:'Bodoni Moda', serif;
+}
+
+.form-input:not(:placeholder-shown) {
+  color: #804850;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
+  transform: translateY(-0.5em) scale(.7);
+  transform-origin: left top;
+  color: var(--theme-color-font-terciaria);
+}
+
+.form-label{
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top:0;
+  left: 5px;
+  font-family: 'Bona Nova', serif;
+  font-weight: 500;
+  font-size: 1.1em;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s ;
+}
+
+.form-submit{
+  background:#ccadb1;
+  color: var(--theme-color-font-principal);
+  font-family:'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: .8em 0 ;
+  border: none;
+  border-radius: .5em ;
+}
+
+.form-line{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #AD6B74;
+  transform: scale(0);
+  transform: left bottom;
+  transform: transform .4s;
+  
+}
+
+.form-input:focus ~ .form-line,
+.form-input:not(:placeholder-shown) ~ .form-line{
+  transform: scale(1);
+
+}
+
+
+textarea{
+  resize: none;
+  justify-content: center;
+  width: 80%;
+  
+
+}
+
+.form-TextLavel{
+  position: absolute;
+  bottom: 3em;;
+  left: 5px;
+  font-family: 'Bona Nova', serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: var(--color);
+
+}
+.contenedor-img-cont{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height:10em;
+  align-items: center;
+  margin: 50px auto;
+  justify-content: center;
+
+}
+
+.img-cont{
+  display: flex;
+  height: 25.5em;
+  position: absolute;
+  font-family: 'Bona Nova', serif;
+  font-weight: 200;
+  padding-top: 1em;
+  text-align: center;
+  
+
+}
+
+#warnings{
+width: 100%;
+margin: auto;
+color: var(--theme-color-font-secundaria);
+
+}
+/* RESPONSIVE-MOBILE */
+@media screen and (max-width: 430px){
+  /* form-contacto */
+  .form-login{
+    margin: 0;
+    margin-top: 5.2em;
+    margin-bottom: 5.2em;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 1em;
+    /* transform: translate(-40%, -50%); */
+  }
+  .form-title{
+    font-size: 1.5rem;
+  }
+  .contenedor-img-cont{
+    width: 100%;
+    height:5em;
+    align-items: center;
+    margin: 25px auto;
+    justify-content: center;
+  }
+
+  .img-cont{
+    display: flex;
+    height: 12.5em;
+    position: absolute;
+  }
+
+}
+

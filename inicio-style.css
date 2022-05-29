@@ -1,0 +1,317 @@
+:root{
+  --theme-color:#ffff;
+  --theme-color-div:#F1D5D9;
+  --theme-colo-div-secundario:#DDC0C4; 
+  --theme-color-block:#E9CDD1;
+  --theme-color-font-footer:#646262;
+  --theme-color-font-principal:#804850;
+  --theme-color-font-secundaria:#AD6B74;
+  --theme-color-font-terciaria:#C0838A; 
+  --theme-color-form:#7A4E55;
+  --theme-color-icon:#C0838A;
+  --theme-color-btn:#E2C9CC;
+  --menu--mobile-background-color:#E9D3D3;
+}
+
+body{
+  background: var(--theme-color);
+  font-family: 'Bodoni Moda', serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* inicio */
+.hero{
+  position: relative;
+  overflow: hidden;
+  margin: 90px  0 0 0; 
+  display:flex;
+  justify-content: center;
+} 
+
+#tituloPrincipal{
+  font-family:'Bodoni Moda';
+  color: var(--theme-color-font-secundaria);
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.hero img {
+  opacity: 0.6;
+  width: 100%;
+  height: 700px;
+  object-fit:cover;
+  object-position: 50% 80%;
+}
+
+/* SUBTITULO */
+.subtituloDM{
+  display: flex;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.subtituloDM .subDM{
+  color:var(--theme-color-font-secundaria) ;
+  font-family: 'Bona Nova', serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+/* NEWSLETTER */
+#newsletter{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+.imgNews{
+  width: 100%;
+  height: 30em;
+  opacity: 0.6;
+  object-fit:cover;
+  object-position: 50% 60%;
+  
+}
+
+#newsletter p {
+  position: absolute;
+  top: 35%;
+  left:52%;
+  font-family: 'Bona Nova';
+  font-style: normal;
+  font-weight: 650;
+  font-size: 32px;
+  color: var(--theme-color-font-principal);
+  text-align: center;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin: 0 1.5em 0 1.5em;
+}
+
+#newsletter button{
+  position:absolute;
+  width: 287px;
+  height: 81px;
+  top: 40%;
+  left:150px;
+  background: var(--theme-color-btn);
+  border-radius: 30px;
+  font-family: 'Bona Nova';
+  color: var(--theme-color-font-principal);
+  border: var(--theme-color-font-principal);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+}
+/*  
+/* finalDelInicio */
+#fotoLogo{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 55rem;
+  padding: 7em 0 0 0;
+  
+}
+
+.imgFinInicio{
+  position: relative;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  object-fit:cover;
+  object-position: -50%, 90%;
+  margin: 1em auto 0 auto ;
+}
+
+.logoFinal{
+  position:absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto 0 auto;
+}
+
+/* RESPONSIVE-MOBILE */
+@media screen and (max-width: 430px){
+  /* TITULO PRINCIPAL */
+  .hero{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    margin: 80px  0 0 0;
+  }
+  #tituloPrincipal{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .hero img {
+    height: 50%;
+    object-fit:cover;
+    object-position: 70% 90%;
+  }
+  /* SUBTITULO */
+  .subtituloDM{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .subtituloDM .subDM{
+    font-size: 20px;
+  }
+  
+  /* NEWSLETTER */
+  .imgNews{
+    height: 50%;
+    object-fit:cover;
+    object-position: 70% 90%;
+  }
+
+  #newsletter p {
+    top: 35%;
+    left:50%;
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0 30px 0 30px;
+  }
+
+  #newsletter button{
+    width: 145px;
+    height: 41px;
+    top: 40%;
+    left:10%;
+    font-size: 10px;
+    margin: 0 0 30px 0;
+  }
+  #fotoLogo{
+    height: 15em;
+    padding: 7em 0 0 0;
+    padding-top: 1em;
+    
+  }
+  
+  .imgFinInicio{
+    height: 250px;
+    object-position: -50%, 90%;
+    margin: 1em auto 0 auto ;
+  }
+  
+  .logoFinal{
+    position:absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto 0 auto;
+  }
+  
+}
+
+
+@media screen and (max-width: 1024px ) and ( min-width:760px){
+  /* TITULO PRINCIPAL */
+  .hero{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    margin: 80px  0 0 0;
+  }
+  #tituloPrincipal{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .hero img {
+    height: 50%;
+    object-fit:cover;
+    object-position: 70% 90%;
+  }
+  /* SUBTITULO */
+  .subtituloDM{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .subtituloDM .subDM{
+    font-size: 20px;
+  }
+  
+  /* NEWSLETTER */
+  .imgNews{
+    height: 50%;
+    object-fit:cover;
+    object-position: 70% 90%;
+  }
+
+  #newsletter p {
+    top: 30%;
+    left:50%;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 30px 0 30px;
+  }
+
+  #newsletter button{
+    width: 145px;
+    height: 41px;
+    top: 40%;
+    left:10%;
+    font-size: 10px;
+    margin: 0 0 30px 0;
+  }
+  #fotoLogo{
+    height: 15em;
+    padding: 7em 0 0 0;
+    padding-top: 1em;
+    
+  }
+  
+  .imgFinInicio{
+    height: 250px;
+    object-position: -50%, 90%;
+    margin: 1em auto 0 auto ;
+  }
+  
+  .logoFinal{
+    position:absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto 0 auto;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
