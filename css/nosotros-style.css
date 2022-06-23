@@ -126,13 +126,15 @@ body{
   font-weight: 550;
 }
 .slider{
-  width: 100%;
+  width:90%;
   height: 23em;
   margin: 1em auto;
   border-radius:0;
   max-width: 30em;
   max-height: 35.5em;
   background:url(../imagenesM/img1.jpeg);
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes slide {

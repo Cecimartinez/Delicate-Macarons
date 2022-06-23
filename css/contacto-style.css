@@ -43,13 +43,13 @@ body{
 }
 
 .form-paragraph{
-  font-weight: 300;
+  font-weight: 500;
   font-family:'Bodoni Moda', serif;
   color: #AD6B74;
 }
 
 .form-link{
-  font-weight: 400;
+  font-weight: 600;
   color: #804850;
   font-family:'Bodoni Moda', serif;
   text-transform: uppercase;
@@ -148,7 +148,7 @@ textarea{
   bottom: 3em;;
   left: 5px;
   font-family: 'Bona Nova', serif;
-  font-weight: 300;
+  font-weight: 450;
   font-size: 1.1em;
   color: var(--color);
 
